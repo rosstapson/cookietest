@@ -11,8 +11,8 @@
 				"level": "DEBUG"
 			},
 			"reload": true
-		}
+		},
+		"ios": {}
 	},
-	"modules": {
-	}
+	"modules": {}
 }

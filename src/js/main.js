@@ -1,6 +1,7 @@
 function displayCookies() {
 	//$("#display_cookie_div").appendChild(document.createTextElement("test"));
 	$("#cookieFrame").attr("src", "http://httpbin.org/cookies/set?mainpage_cookie=set_successfully");
+	alert("cookies set: " + document.cookie);
 }
 
 function setCookie() {
@@ -9,9 +10,10 @@ function setCookie() {
 	var date = new Date();
 	date.setTime(date.getTime() + (24 * 60 * 60 * 1000));
   	var expires = "; expires=" + date.toUTCString();
-  	var cookieString = cookieName + "=" + cookieValue;
-  	alert("cookie string: '" + cookieString + "'");
+  	var cookieString = cookieName + "=" + cookieValue + expires + "; path=/;";
+  	//alert("cookie string: '" + cookieString + "'");
   	document.cookie = cookieString;
+  	
   	//displayCookies();
 }
 
