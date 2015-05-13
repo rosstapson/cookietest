@@ -1,0 +1,14 @@
+{
+	"general": {},
+	"ios": {
+		"profiles": {
+			"DEFAULT": {}
+		}
+	},
+	"android": {
+		"profiles": {
+			"DEFAULT": {}
+		},
+		"sdk": "C:/Users/Ross/AppData/Local/Android/sdk/"
+	}
+}
